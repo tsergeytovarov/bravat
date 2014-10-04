@@ -1,3 +1,54 @@
 /* 
 	start the project modules like a pages 
 */
+
+/* ================
+	
+=================== */
+
+
+/* ================
+   main styles page (index.html)
+=================== */
+.head-page{
+	padding-top: 18px;
+	padding-bottom: 15px;
+	.logo{
+		width: 170px;
+		display: block;
+		margin-right: 155px;
+	}
+	form{
+		width: 267px;
+	}
+	.contacts{
+		width: 338px;
+		text-align: right;
+		p{ line-height: 20px; }
+		a{
+			color: #000;
+			border-bottom: 1px dashed #000;
+			&:hover{ border: 0; }
+		}
+	}
+}
+
+header{
+	nav{
+		font-size: 0;
+		padding: 7px 0;
+		background: #000;
+		a{
+			color: #fff;
+			font-size: 16px;
+			background: #000;
+			padding: 2px 53px;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			border-right: 1px solid #fff;
+		    &:hover{ color: #ccc; }
+		}
+		a:last-child{ border-right: none; }
+	}
+}
