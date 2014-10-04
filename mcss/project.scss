@@ -10,6 +10,8 @@
 /* ================
    main styles page (index.html)
 =================== */
+
+/* Верхняя шапка */
 .head-page{
 	padding-top: 18px;
 	padding-bottom: 15px;
@@ -33,7 +35,9 @@
 	}
 }
 
+/* Основное меню */ 
 header{
+	margin-bottom: 3px;
 	nav{
 		font-size: 0;
 		padding: 7px 0;
@@ -51,4 +55,27 @@ header{
 		}
 		a:last-child{ border-right: none; }
 	}
+}
+
+/* Слайдер */ 
+.slider{
+	position: relative;
+	.slider-caption{
+		width: 350px;
+		padding: 18px 20px;
+		box-sizing: border-box;
+		background: rgba(255,255,255,0.7);
+		position: absolute;
+		top: 35px;
+		left: 60px;
+	}
+	h2 {
+		margin-bottom: 10px;
+		a{
+			color: #000;
+			line-height: 31px;
+			border-bottom: 4px solid #000;
+		}
+	}
+	p{ line-height: 22px; }
 }
