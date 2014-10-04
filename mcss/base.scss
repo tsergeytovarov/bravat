@@ -72,7 +72,13 @@ h2{
 }
 h3{
     font-size: 24px;
+    margin-bottom: 28px;
     font-family: 'eurofontC', sans-serif;
+    a{
+        color: #000;
+        border-bottom: 2px solid #000;
+        &:hover{ border-bottom: none; }
+    }
 }
 h4{
 
@@ -150,6 +156,11 @@ form{
     width: 960px;
     margin: 0 auto;
 }
+.wrapper-block{
+    width: 800px;
+    margin: 0 auto;
+}
+
 
 form{
     .input-search{
@@ -197,7 +208,7 @@ form{
 
 .bx-wrapper {
     position: relative;
-    margin: 0 auto 60px;
+    margin: 0 auto 35px;
     padding: 0;
     *zoom: 1;
 }
