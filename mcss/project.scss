@@ -21,9 +21,7 @@
 		display: block;
 		margin-right: 155px;
 	}
-	form{
-		width: 267px;
-	}
+	form{ width: 267px; }
 	.contacts{
 		width: 338px;
 		text-align: right;
@@ -81,7 +79,6 @@ header{
 	p{ line-height: 22px; }
 }
 
-
 /* О компании */ 
 .about-company{
 	margin-bottom: 45px;
@@ -104,7 +101,6 @@ header{
 		}
 	}
 }
-
 
 /* Каталог товаров */ 
 .products .goods{ min-height: 180px; }
@@ -133,10 +129,20 @@ header{
 	}
 }
 
-
-
-
-
+/* Преимущества продукции Bravat */
+.vantage{
+	.column-text{
+		float: left;
+		width: 324px;
+		padding-right: 30px;
+		p{ line-height: 18px; }
+	}
+	.column-image{
+		float: right;
+		width: 475px;
+		img{ width: 100%; }
+	}
+}
 
 
 
