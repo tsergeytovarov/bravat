@@ -22,15 +22,15 @@
 		margin-right: 155px;
 	}
 	form{ width: 267px; }
-	.contacts{
-		width: 338px;
-		text-align: right;
-		p{ line-height: 20px; }
-		a{
-			color: #000;
-			border-bottom: 1px dashed #000;
-			&:hover{ border: 0; }
-		}
+}
+.contacts{
+	width: 338px;
+	text-align: right;
+	p{ line-height: 20px; }
+	a{
+		color: #000;
+		border-bottom: 1px dashed #000;
+		&:hover{ border: 0; }
 	}
 }
 
@@ -131,6 +131,7 @@ header{
 
 /* Преимущества продукции Bravat */
 .vantage{
+	margin-bottom: 60px;
 	.column-text{
 		float: left;
 		width: 324px;
@@ -144,7 +145,51 @@ header{
 	}
 }
 
+/* Блок с поиском и контактной информацией */
+.contact-info{
+	padding: 35px 0 30px;
+	border-top: 1px solid #e1e1e1;
 
+	form{ 
+		width: 265px; 
+		margin-left: 80px;
+	}
+	.contacts{ width: 325px; }
+}
+
+/* Подвал сайта */ 
+footer{
+	padding: 35px 0;
+	min-height: 300px;
+	background: #f0f0f0;
+}
+.navigation{
+	float: left;
+	width: 240px;
+	padding-right: 30px; 
+	box-sizing: border-box;
+
+	li{
+		font-size: 12px;
+		margin-bottom: 23px;
+		&:hover a{ text-decoration: underline; }
+	}
+	
+	li:first-child, .head{
+		font-family: 'eurofontMediumC';
+	}
+
+	a{ color: #505050; }
+
+	form{ margin-left: -15px; }
+	.input-search{
+		border-color: #e1e1e1;
+		background: transparent;
+	}
+	.submit-search{
+		background-color: #e1e1e1;
+	}
+}
 
 
 
