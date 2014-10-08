@@ -25,6 +25,7 @@
 
 /* basic typography */
 
+/*
 @font-face {
     font-family: 'eurofontMediumc';
     src: url('fonts/eurofont-MediumC.eot');
@@ -57,6 +58,26 @@
          url('fonts/eurofont-LightC.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+} */
+
+@font-face {
+    font-family: 'eurofontBoldc';
+    src: url('fonts/new/EurofontC-Bold.otf');
+}
+
+@font-face {
+    font-family: 'eurofontC';
+    src: url('fonts/new/EurofontC.otf');
+}
+
+@font-face {
+    font-family: 'eurofontMediumC';
+    src: url('fonts/new/EurofontMediumC.otf');
+}
+
+@font-face {
+    font-family: 'eurofontlightc';
+    src: url('fonts/new/EurofontLightC.otf');
 }
 
 
