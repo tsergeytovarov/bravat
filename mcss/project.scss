@@ -107,23 +107,33 @@ header{
 
 
 /* Каталог товаров */ 
-.products{
-	font-size: 0;
-	*{ box-sizing: border-box; }
+.products .goods{ min-height: 180px; }
+
+/* Дизайнерские серии */
+.design-products .goods{ min-height: 305px; }
+
+/* Популярные товары */
+.popular-products{
 	.goods{
-		min-height: 180px;
+		min-height: 253px;
+		img{ height: 120px; }
+		p{ 
+			float: none; 
+			width: 80%;
+			padding: 0;
+			margin: 7px auto;
+			text-align: left;
+			span{ display: block; }
+		}
+		.number{ font-size: 14px; }
+		.name{
+			padding-top: 10px;
+			border-top: 1px solid #e1e1e1;
+		}  
 	}
 }
 
-/* Дизайнерские серии */
-.design-products{
-	font-size: 0;
-	margin: 50px 0px;
-	*{ box-sizing: border-box; }
-	.goods{
-		min-height: 305px;
-	}
-}
+
 
 
 

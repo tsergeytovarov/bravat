@@ -93,7 +93,7 @@ h2{
 }
 h3{
     font-size: 24px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     font-family: 'eurofontC', sans-serif;
     a{
         color: #000;
@@ -208,6 +208,13 @@ form{
     }
 }
 
+/* --- Для всех каталогов --- */ 
+.catalog{
+    font-size: 0;
+    margin: 50px 0px;
+    *{ box-sizing: border-box; }
+}
+
 /* --- Стили для одного товара --- */ 
 .goods{
     color: #000;
@@ -218,6 +225,7 @@ form{
     display: inline-block;
     vertical-align: top;
     padding-bottom: 9px;
+    background: #fff;
     border: 1px solid #e1e1e1;
 
     &:nth-child(5){ margin-right: 0; }
@@ -411,4 +419,4 @@ form{
 
 /* My styles */ 
 .slider .bx-controls-direction{ display: none; }
-.design-products .bx-pager{ display: none; }
+.custom-slider .bx-pager{ display: none; }
