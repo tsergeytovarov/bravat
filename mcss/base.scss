@@ -25,41 +25,6 @@
 
 /* basic typography */
 
-/*
-@font-face {
-    font-family: 'eurofontMediumc';
-    src: url('fonts/eurofont-MediumC.eot');
-    src: url('fonts/eurofont-MediumC.eot?#iefix') format('embedded-opentype'),
-         url('fonts/eurofont-MediumC.woff2') format('woff2'),
-         url('fonts/eurofont-MediumC.woff') format('woff'),
-         url('fonts/eurofont-MediumC.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'eurofontC';
-    src: url('fonts/eurofont-C.eot');
-    src: url('fonts/eurofont-C.eot?#iefix') format('embedded-opentype'),
-         url('fonts/eurofont-C.woff2') format('woff2'),
-         url('fonts/eurofont-C.woff') format('woff'),
-         url('fonts/eurofont-C.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'eurofontlightc';
-    src: url('fonts/eurofont-LightC.eot');
-    src: url('fonts/eurofont-LightC.eot?#iefix') format('embedded-opentype'),
-         url('fonts/eurofont-LightC.woff2') format('woff2'),
-         url('fonts/eurofont-LightC.woff') format('woff'),
-         url('fonts/eurofont-LightC.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: 'eurofontBoldc';
     src: url('fonts/new/EurofontC-Bold.otf');
@@ -252,6 +217,21 @@ form{
         overflow: hidden;
         visibility: hidden;
     }
+}
+
+
+/* Вспылавающие окна */ 
+.link-popup{ 
+    position: relative; 
+    &:hover .popup{ display: inherit; }
+}
+.popup{
+    z-index: 10;
+    top: -22px;
+    right: -95px;
+    @extend .inbox;
+    position: absolute;
+    display: none;
 }
 
 
