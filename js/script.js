@@ -19,7 +19,7 @@ $(function(){
 		slideWidth: 146,
 		slideMargin: 17,
 		moveSlides: 1,
-		// auto: true,
+		auto: true,
 		autoHover: true,
 		pause: 2000
 	});
