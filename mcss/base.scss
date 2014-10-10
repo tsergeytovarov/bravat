@@ -51,7 +51,9 @@ body{
     font-family: 'eurofontlightc', sans-serif;
 }
 h1{
-    
+    font-size: 24px;
+    margin-top: 40px;
+    font-family: 'eurofontC', sans-serif;
 }
 h2{
     font-size: 36px;
@@ -83,9 +85,7 @@ strong, b{
 }
 a{  
     text-decoration: none;
-	&:hover{
-       
-	}
+    font-family: 'eurofontlightc', sans-serif;
 }
 ul{
     li{
@@ -99,7 +99,7 @@ ul{
 
 form{
     input{
-        color: #8c8c8c;
+        color: #505050;
         font-size: 14px;
         box-sizing: border-box;
         font-family: 'eurofontlightc', sans-serif;
@@ -109,16 +109,9 @@ form{
 
         }
     }
-    input::-webkit-input-placeholder{
-        
-    }
-    input::-moz-placeholde{
-        
-    }
-
-    label{
-        cursor: pointer;
-    }
+    input::-webkit-input-placeholder{ color: #8c8c8c;  }
+    input::-moz-placeholder{ color: #8c8c8c;  }
+    label{ cursor: pointer; }
 
     input[type="submit"], button{
         cursor: pointer;
@@ -141,7 +134,7 @@ form{
         width: 85%;
         float: left;
         height: 26px;
-        padding: 0 17px;
+        padding: 0 15px;
         line-height: 17px;
         border: 1px dashed #f0f0f0;
         border-right: none;
@@ -161,6 +154,11 @@ form{
         }   
     }
 }
+footer form{
+    input[type="text"]{ font-size: 12px; }
+    input::-webkit-input-placeholder{ color: #505050;  }
+    input::-moz-placeholder{ color: #505050; }
+}
 
 
 /* base style for page */
@@ -172,6 +170,24 @@ form{
     width: 800px;
     margin: 0 auto;
 }
+
+
+/* Стили для хлебных крошек */
+.breadcrumbs{
+    margin: 25px 0;
+    a, p{
+      color: #8c8c8c;
+      font-size: 12px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    a:after{
+      content: "/";
+      margin: 0 5px;
+    }
+    p, .active{ color: #000; }
+} 
+
 
 /* --- Для всех каталогов --- */ 
 .catalog{
