@@ -250,14 +250,15 @@ footer{
 
 
 /* ===================
-   catalog.html styles
+   catalog, catalog-inner
+   page styles
 ====================== */
 
 .all-catalog{
 	h1{
 		font-size: 24px;
     	margin-top: 40px;
-	    padding-right: 193px;
+	    padding-right: 169px;
 	    a{
 	        float: right;
 	        color: #8c8c8c;
@@ -268,7 +269,20 @@ footer{
 	    }
 	}
 	.catalog{ margin: 30px 0 70px; }
-	.goods{	min-height: 180px;	}
+	.goods{	min-height: 180px; }
+	.all-link{	
+		padding: 0;
+		.table{
+			display: table;
+			min-height: 178px;
+			p{
+				padding: 0 12px;
+				display: table-cell;
+				vertical-align: middle;	
+			}
+		}	
+	}
 }
+
 
 
