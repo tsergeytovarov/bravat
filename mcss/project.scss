@@ -1,10 +1,4 @@
 /* ================
-	
-=================== */
-
-
-
-/* ================
    main styles page (index.html)
 =================== */
 
@@ -255,9 +249,24 @@ footer{
 }
 
 
+/* ===================
+   catalog.html styles
+====================== */
 
-
-
-
+.all-catalog{
+	h1{
+	    padding-right: 193px;
+	    a{
+	        float: right;
+	        color: #8c8c8c;
+	        font-size: 14px;
+	        line-height: 24px;
+	        text-decoration: underline;
+	        &:hover{ text-decoration: none; }
+	    }
+	}
+	.catalog{ margin: 30px 0 70px; }
+	.goods{	min-height: 180px;	}
+}
 
 
