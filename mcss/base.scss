@@ -92,6 +92,31 @@ ul{
 }
 
 
+/* 12-колоночная сетка */
+.row {}
+.row:after { @extend .clear; }
+.column {  
+    float: left; 
+    padding: 10px;
+    @extend .inbox;
+    &:first-child { padding-left: 0px; }
+    &:last-child  { padding-right: 0px; }
+}
+.column1  {  width: 8.33%;  }
+.column2  {  width: 16.66%; }
+.column3  {  width: 25%;    }
+.column4  {  width: 33.33%; }
+.column5  {  width: 41.66%; }
+.column6  {  width: 50%;    }
+.column7  {  width: 58.33%; }
+.column8  {  width: 66.66%; }
+.column9  {  width: 75%;    }
+.column10 {  width: 83.11%; }
+.column11 {  width: 91.66%; }
+.column12 {  width: 100%;   }
+
+
+
 
 /* form style input and other */
 
@@ -234,7 +259,7 @@ footer form{
 }
 
 
-/* Вспылавающие окна */ 
+/* Вспылавающие поповеры */ 
 .link-popup{ 
     position: relative; 
     &:hover .popup{ display: inherit; }
@@ -249,23 +274,27 @@ footer form{
 }
 
 
+/* 
+    arcticModal — jQuery plugin
+    Version: 0.3
+*/ 
 
-/**
- * BxSlider v4.1.2 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Written by: Steven Wanderski, 2014
- * http://stevenwanderski.com
- * (while drinking Belgian ales and listening to jazz)
- *
- * CEO and founder of bxCreative, LTD
- * http://bxcreative.com
- */
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
+.arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(loading.gif) no-repeat 50% 50%; }
 
 
-/** RESET AND LAYOUT
-===================================*/
+/*
+    BxSlider v4.1.2 - Fully loaded, responsive content slider
+    http://bxslider.com
+*/
 
+/* RESET AND LAYOUT*/
 .bx-wrapper {
     position: relative;
     margin: 0 auto 35px;
@@ -277,9 +306,7 @@ footer form{
     display: block;
 }
 
-/** THEME
-===================================*/
-
+/* THEME */
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
     position: absolute;

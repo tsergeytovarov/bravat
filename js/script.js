@@ -23,5 +23,13 @@ $(function(){
 		autoHover: true,
 		pause: 2000
 	});
-	
+
+	$('.link-modal-catalog').click(function(){
+		var c = $('<div class="box-modal" />');
+		    c.html($('#modalCatalog').html());
+		    $.arcticmodal({
+		        content: c
+		});
+	});	
+
 });
