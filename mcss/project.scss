@@ -139,18 +139,23 @@ header{
 /* Популярные товары */
 .popular-products{
 	.goods{
-		min-height: 253px;
-		img{ height: 120px; }
+		min-height: 255px;
+		img{ 
+			padding: 15px;
+			height: 120px;
+			@extend .inbox;
+		}
 		p{ 
 			float: none; 
 			width: 80%;
 			padding: 0;
-			margin: 7px auto;
+			margin: 6px auto;
 			text-align: left;
 			span{ display: block; }
 		}
-		.number{ font-size: 14px; }
+		.number{ font-size: 14px; margin-bottom: 0; }
 		.name{
+			min-height: 80px;
 			padding-top: 10px;
 			border-top: 1px solid #e1e1e1;
 		}  
@@ -269,7 +274,6 @@ footer{
 	    }
 	}
 	.catalog{ margin: 30px 0 70px; }
-	.goods{	min-height: 180px; }
 	.all-link{	
 		padding: 0;
 		.table{
