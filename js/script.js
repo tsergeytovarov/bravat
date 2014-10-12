@@ -24,6 +24,11 @@ $(function(){
 		pause: 2000
 	});
 
+	$('.bxslider-4').bxSlider({
+		pagerCustom: '#bx-pager',
+		controls: false
+	});
+
 	$('.link-modal-catalog').click(function(){
 		var c = $('<div class="box-modal" />');
 		    c.html($('#modalCatalog').html());

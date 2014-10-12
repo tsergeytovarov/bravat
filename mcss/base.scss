@@ -47,11 +47,10 @@
 
 
 
-body{
-    font-family: 'eurofontlightc', sans-serif;
-}
+body{  font-family: 'eurofontlightc', sans-serif; }
+h1, h2, h3{ font-family: 'eurofontC', sans-serif; }
 h1{
-    font-family: 'eurofontC', sans-serif;
+    
 }
 h2{
     font-size: 36px;
@@ -59,7 +58,6 @@ h2{
 h3{
     font-size: 24px;
     margin-bottom: 30px;
-    font-family: 'eurofontC', sans-serif;
     a{
         color: #000;
         border-bottom: 2px solid #000;
@@ -75,25 +73,41 @@ h5{
 h6{
 
 }
-p,li{
-    font-size: 16px;
-}
-strong, b{
 
-}
-a{  
-    text-decoration: none;
-    font-family: 'eurofontlightc', sans-serif;
-}
-ul{
-    li{
-        
+/* Заголовок + ссылка */
+.headline{
+    font-size: 24px;
+    margin-top: 30px;
+    padding-right: 169px;
+    a{
+        float: right;
+        color: #8c8c8c;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: underline;
+        &:hover{ text-decoration: none; }
     }
 }
 
 
+p,li{ font-size: 16px; }
+
+a{  
+    color: #000;
+    text-decoration: none;
+    font-family: 'eurofontlightc', sans-serif;
+}
+
+.link-line{
+    text-decoration: underline;
+    &:hover{ text-decoration: none; }
+}
+.link-dashed{
+    border-bottom: 1px dashed #000;
+    &:hover{ border-bottom-color: transparent; }
+}
+
 /* 12-колоночная сетка */
-.row {}
 .row:after { @extend .clear; }
 .column {  
     float: left; 
@@ -161,9 +175,7 @@ form{
         line-height: 17px;
         border: 1px dashed #f0f0f0;
         border-right: none;
-        &:focus{
-            border-color: #ccc;
-        }
+        &:focus{ border-color: #ccc; }
     }
     .submit-search{
         width: 15%;
@@ -172,9 +184,7 @@ form{
         height: 26px;
         background: #f0f0f0 url(img/icon-search.png) no-repeat;
         background-position: center center;   
-        &:hover{
-            background-color: #dedcdc;
-        }   
+        &:hover{ background-color: #dedcdc; }   
     }
 }
 footer form{
@@ -184,7 +194,7 @@ footer form{
 }
 
 
-/* base style for page */
+/* ---- Стили для выравнивания блоков ---- */
 .container{
     width: 960px;
     margin: 0 auto;
@@ -195,7 +205,7 @@ footer form{
 }
 
 
-/* Стили для хлебных крошек */
+/* ---- Стили для хлебных крошек ---- */
 .breadcrumbs{
     margin: 25px 0;
     a, p{
@@ -212,14 +222,14 @@ footer form{
 } 
 
 
-/* --- Для всех каталогов --- */ 
+/* ---- Для всех каталогов ---- */ 
 .catalog{
     font-size: 0;
-    margin: 50px 0px;
+    margin: 40px 0px;
     *{ box-sizing: border-box; }
 }
 
-/* --- Стили для одного товара --- */ 
+/* ---- Стили для одного товара ---- */ 
 .goods{
     color: #000;
     width: 146px;
@@ -259,7 +269,7 @@ footer form{
 }
 
 
-/* Вспылавающие поповеры */ 
+/* ---- Вспылавающие поповеры ---- */ 
 .link-popup{ 
     position: relative; 
     &:hover .popup{ display: inherit; }
@@ -413,12 +423,10 @@ footer form{
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-    text-align: left;
-    width: 80%;
+    text-align: left; width: 80%;
 }
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-    right: 0;
-    width: 35px;
+    right: 0; width: 35px;
 }
 
 /* IMAGE CAPTIONS */

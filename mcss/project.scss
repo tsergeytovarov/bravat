@@ -1,6 +1,6 @@
-/* ================
+/* =============================
    main styles page (index.html)
-=================== */
+================================ */
 
 /* Верхняя шапка */
 .head-page{
@@ -99,7 +99,6 @@ header{
 	h2 {
 		margin-bottom: 10px;
 		a{
-			color: #000;
 			line-height: 31px;
 			border-bottom: 3px solid #000;
 		}
@@ -238,7 +237,6 @@ footer{
 		line-height: 16px;
 	}
 	a{
-		color: #000;
 		margin-bottom: 3px;
 		line-height: 16px;
 		display: inline-block;
@@ -254,25 +252,13 @@ footer{
 }
 
 
-/* ===================
-   catalog, catalog-inner
+/* ==============================
+   catalog, catalog-inner2-3.html
    page styles
-====================== */
+================================= */
 
+/* Стили для каталога */ 
 .all-catalog{
-	h1{
-		font-size: 24px;
-    	margin-top: 40px;
-	    padding-right: 169px;
-	    a{
-	        float: right;
-	        color: #8c8c8c;
-	        font-size: 14px;
-	        line-height: 24px;
-	        text-decoration: underline;
-	        &:hover{ text-decoration: none; }
-	    }
-	}
 	.catalog{ margin: 30px 0 70px; }
 	.all-link{	
 		padding: 0;
@@ -300,7 +286,6 @@ footer{
 		font-size: 20px;
 		margin-bottom: 5px;
 		font-family: 'eurofontlightc', sans-serif;
-		a{ color: #000; }
 	}
 	p{
 		font-size: 16px;
@@ -321,5 +306,89 @@ footer{
 		padding: 5px 0;
 	}
 }
+
+
+/* ==============================
+   Карточка продукта 
+   (card-product.html)
+================================= */
+
+/* Кастомизация слайда */ 
+.card-slider{
+	margin-top: 80px;
+	.bx-wrapper{ 
+		float: left; 
+		margin-right: 18px;
+		width: 636px!important; 
+		border: 1px solid #e1e1e1;
+	}
+	.slider-pager{ 
+		float: right; 
+		width: 144px!important; 
+		a{
+			height: 89px;
+			display: block;
+			text-align: center;
+			margin-bottom: 16px;
+			border: 1px solid #e1e1e1;
+		}
+	}
+}
+
+/* Описание продукта */ 
+.card-product{
+	margin: 35px 0;
+	.info{
+		width: 640px;
+	}
+	.row{ margin: 10px 0; }
+	h1{ 
+		font-size: 24px; 
+		line-height: 28px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	    font-family: 'eurofontBoldc';
+	}
+	.grey-head{
+		color: #8c8c8c;
+		font-size: 12px;
+		margin: 12px 0 6px;
+	}
+	.article{ 
+		padding-right: 30px;
+		margin-bottom: 12px; 
+	}
+	.article span{
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+	.desc{ margin-bottom: 25px; }
+	.link-product, .link-all{
+		font-size: 20px;
+		margin-bottom: 5px;
+		font-family: 'eurofontC';
+		text-decoration: underline;
+		&:hover{ text-decoration: none; }
+	}
+	.link-all{ font-size: 14px; }
+	.download{
+		width: 150px;
+		img, a{ 
+			display: block; 
+			margin-bottom: 10px;
+		}
+		a{ margin-bottom: 20px; }
+		a:last-child{ margin-top: 50px; }
+	}
+	.link-block{
+		margin: 30px 0;
+		a{
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 103px;
+		}
+	}
+}
+
 
 
