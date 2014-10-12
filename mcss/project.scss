@@ -18,11 +18,8 @@
 	text-align: right;
 	p{ line-height: 20px; }
 	.link{
-		color: #000;
 		cursor: poiner;
 		display: inline-block;
-		border-bottom: 1px dashed #000;
-		&:hover{ border-bottom: 1px solid #000; }
 	}
 }
 
@@ -120,11 +117,8 @@ header{
 	.pdf{ 
 		width: 160px; 
 		a span{
-			color: #000;
 			font-size: 14px;
 			line-height: 18px;
-			border-bottom: 1px dashed #000;
-			&:hover{ border: 0; }
 		}
 	}
 }
@@ -200,19 +194,15 @@ footer{
 	width: 240px;
 	padding-right: 30px; 
 	@extend .inbox;
-
 	li{
 		font-size: 12px;
 		margin-bottom: 23px;
 		&:hover a{ text-decoration: underline; }
 	}
-	
 	li:first-child, .head{
 		font-family: 'eurofontMediumC';
 	}
-
 	a{ color: #505050; }
-
 	form{ margin-left: -15px; }
 	.input-search{
 		border-color: #e1e1e1;

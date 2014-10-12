@@ -22,9 +22,6 @@
 }
 .clearfix:after{ @extend .clear; }
 
-// .align-r{ text-align: right; }
-
-// .vh{ visibility: hidden!important; }
 
 /* basic typography */
 
@@ -274,6 +271,7 @@ footer form{
 
 /* ---- Вспылавающие поповеры ---- */ 
 .link-popup{ 
+    display: inline-block;
     position: relative; 
     &:hover .popup{ display: inherit; }
 }
