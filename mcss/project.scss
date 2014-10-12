@@ -338,9 +338,7 @@ footer{
 /* Описание продукта */ 
 .card-product{
 	margin: 35px 0;
-	.info{
-		width: 640px;
-	}
+	.info{ width: 640px;  }
 	.row{ margin: 10px 0; }
 	h1{ 
 		font-size: 24px; 
@@ -389,6 +387,78 @@ footer{
 		}
 	}
 }
+
+
+/* =====================
+   Страница о компании
+   (company.html)
+======================== */
+
+.company{
+	margin: 40px 0;
+	h2{ 
+		font-size: 20px;
+	 	margin: 15px 0; 
+	}
+	.blog-map{ margin-top: 50px; }
+	.blog-text{
+		p{
+			font-size: 14px; 
+			line-height: 16px
+		}
+	}
+	.row{ margin: 14px 0; }
+	.blog{
+		p{ margin: 0 0 20px; }
+		img{ 
+			width: 100%;
+			margin: 15px 0; 
+		} 
+	}
+	.youtube{
+		span, img{
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+	aside{ padding-right: 80px; }
+	ul{ margin-left: 15px; }
+	li{
+		font-size: 16px;
+		margin-bottom: 12px;
+		list-style-type: disc;
+		list-style-position: outside;
+		span{
+			font-size: 20px;
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+}
+.advantage{
+	margin-top: 40px;
+	*{ @extend .inbox; }
+	img{ width: 240px; }
+	.row{
+		font-size: 0;
+		border: 1px solid #e1e1e1;
+		.column{ padding: 0; }
+		.column:last-child{ padding: 20px 15px 15px 0; }
+	}
+	h4{
+		font-size: 20px;
+		font-family: 'eurofontC';
+		margin-bottom: 3px;
+	}
+	p, a{ font-size: 16px; }
+	.grey-link{
+		float: right;
+		color: #8c8c8c;
+		border-bottom: 1px dashed #8c8c8c;
+		&:hover{ border-bottom-color: transparent; }
+	}
+}
+
 
 
 

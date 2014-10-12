@@ -22,6 +22,9 @@
 }
 .clearfix:after{ @extend .clear; }
 
+// .align-r{ text-align: right; }
+
+// .vh{ visibility: hidden!important; }
 
 /* basic typography */
 
@@ -50,7 +53,7 @@
 body{  font-family: 'eurofontlightc', sans-serif; }
 h1, h2, h3{ font-family: 'eurofontC', sans-serif; }
 h1{
-    
+    font-size: 24px;
 }
 h2{
     font-size: 36px;
