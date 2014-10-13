@@ -466,7 +466,40 @@ footer{
 }
 
 
+/* Стили для поповера продукта */ 
+.goods{ 
+	position: relative; 
+	&:hover .popover{ display: inherit; }
+}
 
+.popover{
+	display: none;
+	
+	width: 335px;
+	z-index: 10;
+	@extend .inbox;
+	background: #fff;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	margin-left: -167px;
+	border: 1px solid #e1e1e1;
+	.name  { padding: 10px 0px 0px 20px; }
+	.number{ padding: 12px 20px 0px 0px; }
+	.description{
+		padding: 10px 20px 10px 20px;
+		p{ 
+			padding: 8px 0;
+			margin-bottom: 10px;
+			border-top: 1px solid #e1e1e1; 
+			border-bottom: 1px solid #e1e1e1;
+		}
+		span{
+			display: block;
+			margin: 6px 0;
+		}
+	}
+}
 
 
 
