@@ -503,6 +503,48 @@ footer{
 
 
 
+/* ===============
+   material.html
+   page styles
+================== */
+
+.document{
+	border: none;
+	figure{ 
+		text-align: center;
+		margin-bottom: 15px;
+		border: 1px solid #e1e1e1; 
+	}
+	img{ width: auto; }
+	span{
+		line-height: 21px;
+	}
+}
+.search-block{
+	margin-bottom: 60px;
+	h2{
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.grey-head{
+		color: #8c8c8c;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.select-outer{ margin-bottom: 30px; }
+	.material{
+		width: 49%;
+		@extend .inbox;
+		padding-right: 20px;
+		img{ 
+			display: block; 
+			margin: 10px 0 8px;
+		}
+	}
+	.material:first-child{ width: 220px; }
+}
+
+
 
 
 
