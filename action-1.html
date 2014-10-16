@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Брават - Смесители для раковины</title>
+    <title>Брават - Акции для продавцов</title>
     
     <link rel="stylesheet" href="mcss/style.css">
     
@@ -67,24 +67,101 @@
 		<section>
 			<h1>Акции для продавцов</h1>
 			<div class="row">
-				<div class="column column6">
+				<div class="column column6 text-column">
 					<p>Компания BRAVAT рада предложить Вашему вниманию акцию для продающего персонала Вашей организации.</p>
 
 					<p>Суть акции: за продажу и продвижение смесителей ТМ Bravat продавцы в торговом зале получают призы.</p>
 
 					<p>Схема акции: В каждую коробку со смесителем вложен талон с пометкой «Акция», который необходимо зарегистрировать на сайте компании.</p>
 				</div>
-				<div class="column column6">
+				<div class="column column6 t-right">
 					<img src="img/action.jpg" alt="">
 				</div>
 			</div>
 		</section>	
 
 		<!-- Таблица начисления баллов -->
-		<section>
+		<section class="">
 			<h2>Таблица начисления баллов</h2>
-			<table></table>
+			<table class="bonus">
+				<tr>
+					<td>Смесители эконом-серий Eco, Eco-d, Drop, Drop-D, Stream, Stream-D, Line, Linear, Duo, Fit, Simple</td>
+					<td>50 баллов</td>
+				</tr>
+				<tr>
+					<td>Смесители остальных серий</td>
+					<td>100 баллов</td>
+				</tr>
+			</table>
+			<div class="column6 text-column">
+				<p>Призы могут быть выданы в виде подарков (предметы бытовой техники, спортивный инвентарь) или подарочных сертификатов.</p>
+				<p>Итоги акции подводятся каждый квартал. При желании участник может продлить период накопления баллов с одного квартала до двух, либо трех и т.д., так как акция является бессрочной.</p>
+			</div>
 		</section>
+
+		<!-- Войти в личный кабинет -->
+		<section>
+			<h2>Войти в личный кабинет</h2>
+			<form class="authorization column7">
+				<label class="grey-head" for="email">Адрес электронной почты</label>
+				<input type="text" placeholder="Адрес" class="input-text" id="email" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+
+				<label class="grey-head" for="pass">Пароль</label>
+				<input type="text" placeholder="Пароль" class="input-text" id="pass" />
+				<p class="error to-left">Неверное сочетание</p>
+
+				<a href="#" class="forgot-pass link-dashed to-right">Забыли пароль?</a>
+			</form>
+		</section>	
+
+		<!-- Зарегистрируйтесь для участия в акции -->
+		<section>
+			<h2>Зарегистрируйтесь для участия в акции</h2>
+			<form class="register column7">
+				<label class="grey-head" for="name">Имя</label>
+				<input type="text" placeholder="Имя" class="input-text" id="name" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+
+				<label class="grey-head" for="first-name">Фамилия</label>
+				<input type="text" placeholder="Фамилия" class="input-text" id="first-name" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+
+				<label class="grey-head" for="email">Адрес электронной почты</label>
+				<input type="text" placeholder="Адрес" class="input-text" id="email" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+				
+				<label class="grey-head" for="email">Город</label>
+				<div class="select-outer">
+				    <select id="select" name="select" size="1">
+				        <option>В каком городе находится магазин?</option>	
+				        <option>Санкт-Петербург</option>	
+				        <option>Москва</option>				
+				    </select>
+				    <a class="select-button"></a>
+				</div>
+
+				<label class="grey-head" for="email">Название магазина</label>
+				<div class="select-outer">
+				    <select id="select" name="select" size="1">
+				        <option>В каком магазине вы работаете?</option>	
+				        <option>Санкт-Петербург</option>	
+				        <option>Москва</option>				
+				    </select>
+				    <a class="select-button"></a>
+				</div>
+
+				<input type="submit" value="Зарегистрироваться" class="btn black-btn" />
+
+				<p class="grey-head">На вашу почту будет отправлено письмо с подтверждением регистрации</p>
+				
+				<div class="captcha">
+					<p>Введите текст с картинки:</p>
+					<img src="img/captcha.jpg" height="86" width="166" alt="">
+				</div>
+
+			</form>
+		</section>	
 
 	</div>
 

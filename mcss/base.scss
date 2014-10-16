@@ -74,6 +74,8 @@ h6{
 
 }
 
+.t-right{ text-align: right; }
+
 /* Заголовок + ссылка */
 .headline{
     font-size: 24px;
@@ -132,7 +134,7 @@ a{
 
 
 
-/* form style input and other */
+/* Основные стили формы */
 
 form{
     input{
@@ -142,9 +144,6 @@ form{
         font-family: 'eurofontlightc', sans-serif;
         outline: none;
         border: 0;
-        &:focus{
-
-        }
     }
     input::-webkit-input-placeholder{ color: #8c8c8c;  }
     input::-moz-placeholder{ color: #8c8c8c;  }
@@ -156,26 +155,26 @@ form{
     }
 }
 
-/* btn styles */
-.btn{
-    display: inline-block;
-    text-align: center;
-    &:hover{
-        
-    }
-}
-
 /* Общие стили для формы */ 
 form{
-    .input-search{
+    .input-search, .input-text{        
+        height: 28px;
+        padding: 0 15px;
+        line-height: 18px;
+        border: 1px dashed #f0f0f0;
+        &:focus{ border-color: #ccc; }
+    }
+    .input-text{
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .input-search{ 
         width: 85%;
         float: left;
         height: 26px;
-        padding: 0 15px;
-        line-height: 17px;
-        border: 1px dashed #f0f0f0;
-        border-right: none;
-        &:focus{ border-color: #ccc; }
+        border-right: none; 
     }
     .submit-search{
         width: 15%;
@@ -186,11 +185,34 @@ form{
         background-position: center center;   
         &:hover{ background-color: #dedcdc; }   
     }
+    .input-text::-webkit-input-placeholder{ color: #000;  }
+    .input-text::-moz-placeholder{ color: #000; }
 }
+
+/* Формы поиска в подвале */ 
 footer form{
     input[type="text"]{ font-size: 12px; }
     input::-webkit-input-placeholder{ color: #505050;  }
     input::-moz-placeholder{ color: #505050; }
+}
+
+/* btn styles */
+.btn{
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 15px;
+    display: inline-block;
+    text-align: center;
+    transition: 0.5s background-color ease;
+}
+.black-btn{ 
+    background-color: #000; 
+    border: 1px solid transparent;
+    &:hover{
+        color: #000;
+        border-color: #000;
+        background-color: #fff;
+    }
 }
 
 /* --- Кастомизация селекта --- */ 
@@ -204,7 +226,7 @@ select {
     background: none;       
     z-index: 100;
     outline: none;
-    border: 1px dashed #e1e1e1;
+    border-radius: 0!important;
     font-family: 'eurofontlightc', sans-serif;
 }
 .select-outer {
@@ -213,6 +235,9 @@ select {
     overflow: hidden;
     display: inline-block;
     position: relative; 
+    border-radius: 0;
+    border: 1px dashed #e1e1e1;
+    border-right: 0;
 }
 .select-button {
     background: #e1e1e1 url(../img/select-arrow.jpg) center center no-repeat;
