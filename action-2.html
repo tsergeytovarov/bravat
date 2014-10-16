@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Брават - Личный макет</title>
+    
+    <link rel="stylesheet" href="mcss/style.css">
+    
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]--> 
+
+</head>
+<body>
+	<!-- Хедер страницы -->
+	<header>
+		<div class="container">
+			<div class="head-page clearfix">
+				<a href="index.html" class="logo to-left">
+					<h1><img src="img/logo.png" alt="Bravat" /></h1>
+				</a>
+				<form action="" class="to-left">
+					<input type="text" placeholder="Поиск" class="input-search" />
+					<input type="submit" value="Найти" class="submit-search" />
+				</form>
+				<div class="contacts to-right">
+					<p>Телефон горячей линии: +7 (812) 313-80-61</p>
+					<p>
+						<div class="link-dashed link-popup">
+							Контактная информация
+							<div class="popup popup-contact">
+								<p class="head">Контактная информация</p>
+								<p>ООО «БРАВАТ»</p>
+								<p>195027, Санкт-Петербург Свердловская набережная, 44 Д
+									5 этаж, бизнес-центр «Лето»</p>
+								<p>Тел./факс: +7 (812) 642 46 68</p>
+								<p class="margin-bottom">E-mail: info@bravat.info</p>
+								<a href="#">Адреса магазинов</a>
+								<a href="#">Сервисные центы</a>
+								<a href="#">Форма обратной связи</a>
+							</div>
+						</div>
+					</p>
+					<p><a href="#" class="link-line">Адреса магазинов</a></p>
+				</div>
+			</div>
+			<nav>
+				<a href="company.html">О компании</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="#">Серии</a>
+				<a href="#">Акции для продавцов</a>
+				<a href="#">Сервис</a>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- Общий блок с враппером в 800px -->
+	<div class="wrapper-block actions">
+		<!-- Хлебные крошки -->
+		<article class="breadcrumbs">
+			<a href="index.html">Главная</a>
+			<a href="action-1.html">Акции для продавцов</a>
+			<p>Акции для продавцов</p>
+		</article>
+		
+		<!-- Акции для продавцов -->
+		<section>
+			<h1>Акции для продавцов</h1>
+			
+		</section>	
+
+		<!-- Войти в личный кабинет -->
+		<section>
+			<h2>Войти в личный кабинет</h2>
+			<form class="authorization column7">
+				<label class="grey-head" for="email">Адрес электронной почты</label>
+				<input type="text" placeholder="Адрес" class="input-text" id="email" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+
+				<label class="grey-head" for="pass">Пароль</label>
+				<input type="text" placeholder="Пароль" class="input-text" id="pass" />
+				<p class="error to-left">Неверное сочетание</p>
+
+				<a href="#" class="forgot-pass link-dashed to-right">Забыли пароль?</a>
+			</form>
+		</section>	
+
+		<!-- Зарегистрируйтесь для участия в акции -->
+		<section>
+			<h2>Зарегистрируйтесь для участия в акции</h2>
+			<form class="register column7">
+				<label class="grey-head" for="name">Имя</label>
+				<input type="text" placeholder="Имя" class="input-text" id="name" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+
+				<label class="grey-head" for="first-name">Фамилия</label>
+				<input type="text" placeholder="Фамилия" class="input-text" id="first-name" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+
+				<label class="grey-head" for="email">Адрес электронной почты</label>
+				<input type="text" placeholder="Адрес" class="input-text" id="email" />
+				<!-- <p class="error">Неверное сочетание</p> -->
+				
+				<label class="grey-head" for="email">Город</label>
+				<div class="select-outer">
+				    <select id="select" name="select" size="1">
+				        <option>В каком городе находится магазин?</option>	
+				        <option>Санкт-Петербург</option>	
+				        <option>Москва</option>				
+				    </select>
+				    <a class="select-button"></a>
+				</div>
+
+				<label class="grey-head" for="email">Название магазина</label>
+				<div class="select-outer">
+				    <select id="select" name="select" size="1">
+				        <option>В каком магазине вы работаете?</option>	
+				        <option>Санкт-Петербург</option>	
+				        <option>Москва</option>				
+				    </select>
+				    <a class="select-button"></a>
+				</div>
+
+				<input type="submit" value="Зарегистрироваться" class="btn black-btn" />
+
+				<p class="grey-head">На вашу почту будет отправлено письмо с подтверждением регистрации</p>
+				
+				<div class="captcha">
+					<p>Введите текст с картинки:</p>
+					<img src="img/captcha.jpg" height="86" width="166" alt="">
+				</div>
+
+			</form>
+		</section>	
+
+		<!-- Таблица начисления баллов -->
+		<section class="">
+			<h2>Таблица начисления баллов</h2>
+			<table class="bonus">
+				<tr>
+					<td>Смесители эконом-серий Eco, Eco-d, Drop, Drop-D, Stream, Stream-D, Line, Linear, Duo, Fit, Simple</td>
+					<td>50 баллов</td>
+				</tr>
+				<tr>
+					<td>Смесители остальных серий</td>
+					<td>100 баллов</td>
+				</tr>
+			</table>
+			<div class="column6 text-column">
+				<p>Призы могут быть выданы в виде подарков (предметы бытовой техники, спортивный инвентарь) или подарочных сертификатов.</p>
+				<p>Итоги акции подводятся каждый квартал. При желании участник может продлить период накопления баллов с одного квартала до двух, либо трех и т.д., так как акция является бессрочной.</p>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Блок с поиском и контактной информацией -->
+	<div class="contact-info">
+		<div class="container clearfix">
+			<form action="" class="to-left">
+				<input type="text" placeholder="Поиск" class="input-search" />
+				<input type="submit" value="Найти" class="submit-search" />
+			</form>
+			<div class="contacts to-right">
+				<p>Телефон горячей линии: +7 (812) 313-80-61</p>
+				<p>
+					<div class="link-dashed link-popup">
+						Контактная информация
+						<div class="popup popup-contact">
+							<p class="head">Контактная информация</p>
+							<p>ООО «БРАВАТ»</p>
+							<p>195027, Санкт-Петербург Свердловская набережная, 44 Д
+								5 этаж, бизнес-центр «Лето»</p>
+							<p>Тел./факс: +7 (812) 642 46 68</p>
+							<p class="margin-bottom">E-mail: info@bravat.info</p>
+							<a href="#">Адреса магазинов</a>
+							<a href="#">Сервисные центы</a>
+							<a href="#">Форма обратной связи</a>
+						</div>
+					</div>
+				</p>
+				<p><a href="#" class="link-line">Адреса магазинов</a></p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Подвал сайте -->
+	<footer>
+		<div class="container clearfix">
+			<ul class="navigation">
+				<li class="head">О компании</li>
+				<li><a href="#">История</a></li>
+				<li><a href="#">Мощности</a></li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Дизайн-центры</a></li>
+				<li><a href="#">Наши партнеры</a></li>
+				<li><a href="#">Преимущества Bravat</a></li>
+			</ul>
+			<ul class="navigation">
+				<li class="head">Каталог</li>
+				<li><a href="#">Смесители</a></li>
+				<li><a href="#">Душевые наборы</a></li>
+				<li><a href="#">Душевые лейки</a></li>
+				<li><a href="#">Шланги</a></li>
+				<li><a href="#">Штанги</a></li>
+				<li><a href="#">Акриловые ванны</a></li>
+				<li><a href="#">Душевые ограждения</a></li>
+				<li><a href="#">Санфаянс</a></li>
+			</ul>
+			<ul class="navigation">
+				<li class="head">Где купить</li>
+				<li><a href="#">Найти дилера</a></li>
+				<li><a href="#">Розничные магазины</a></li>
+				<li>
+					<form action="" class="clearfix">
+						<input type="text" placeholder="Введите город" class="input-search" />
+						<input type="submit" value="Найти" class="submit-search" />
+					</form>
+				</li>
+				<li>
+					<form action="" class="clearfix">
+						<input type="text" placeholder="Выберите товар" class="input-search" />
+						<input type="submit" value="Найти" class="submit-search" />
+					</form>
+				</li>
+			</ul>
+			<ul class="navigation">
+				<li class="head">Сервис</li>
+				<li><a href="#">Сервисные центры</a></li>
+				<li><a href="#">Гарантийное обслуживание</a></li>
+				<li><a href="#">Форма обратной связи</a></li>
+				<li><a href="#">Материалы для скачивания</a></li>
+			</ul>				
+		</div>
+	</footer>
+
+    
+   
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/min/script.min.js"></script> -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
