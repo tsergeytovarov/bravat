@@ -65,70 +65,105 @@
 		</article>
 		
 		<!-- Акции для продавцов -->
-		<section>
-			<h1>Акции для продавцов</h1>
-			
+		<section class="personal-head clearfix">
+			<h1 class="to-left">Акции для продавцов</h1>
+			<div class="links to-right">
+				<a href="#" class="link-line">Зарегистрированные таллоны</a>
+				<a href="#" class="link-line">Изменить профиль</a>
+			</div>
 		</section>	
 
-		<!-- Войти в личный кабинет -->
-		<section>
-			<h2>Войти в личный кабинет</h2>
-			<form class="authorization column7">
-				<label class="grey-head" for="email">Адрес электронной почты</label>
-				<input type="text" placeholder="Адрес" class="input-text" id="email" />
-				<!-- <p class="error">Неверное сочетание</p> -->
-
-				<label class="grey-head" for="pass">Пароль</label>
-				<input type="text" placeholder="Пароль" class="input-text" id="pass" />
-				<p class="error to-left">Неверное сочетание</p>
-
-				<a href="#" class="forgot-pass link-dashed to-right">Забыли пароль?</a>
-			</form>
-		</section>	
-
-		<!-- Зарегистрируйтесь для участия в акции -->
-		<section>
-			<h2>Зарегистрируйтесь для участия в акции</h2>
-			<form class="register column7">
-				<label class="grey-head" for="name">Имя</label>
-				<input type="text" placeholder="Имя" class="input-text" id="name" />
-				<!-- <p class="error">Неверное сочетание</p> -->
-
-				<label class="grey-head" for="first-name">Фамилия</label>
-				<input type="text" placeholder="Фамилия" class="input-text" id="first-name" />
-				<!-- <p class="error">Неверное сочетание</p> -->
-
-				<label class="grey-head" for="email">Адрес электронной почты</label>
-				<input type="text" placeholder="Адрес" class="input-text" id="email" />
-				<!-- <p class="error">Неверное сочетание</p> -->
-				
-				<label class="grey-head" for="email">Город</label>
-				<div class="select-outer">
-				    <select id="select" name="select" size="1">
-				        <option>В каком городе находится магазин?</option>	
-				        <option>Санкт-Петербург</option>	
-				        <option>Москва</option>				
-				    </select>
-				    <a class="select-button"></a>
+		<!-- Личный кабинет -->
+		<section class="personal-form">	
+			<!-- Секция с заголовком и кнопкой выйти -->
+			<div class="header-area row">
+				<div class="column column5">
+					<h2>Здравствуйте, <span class="name">Игорь</span>!</h2>
 				</div>
-
-				<label class="grey-head" for="email">Название магазина</label>
-				<div class="select-outer">
-				    <select id="select" name="select" size="1">
-				        <option>В каком магазине вы работаете?</option>	
-				        <option>Санкт-Петербург</option>	
-				        <option>Москва</option>				
-				    </select>
-				    <a class="select-button"></a>
+				<div class="column column5">
+					<p>Ваш личный ID: 12345678</p>
 				</div>
+				<div class="column column2 exit-link">
+					<a href="#" class="link-dashed">Выйти</a>
+				</div>
+			</div>
 
-				<input type="submit" value="Зарегистрироваться" class="btn black-btn" />
+			<!-- Общая форма -->
+			<form action="">
+				<div class="row">
+					<!-- Левая колонка с формой -->
+					<div class="column column5 pr-column">
+						<label class="grey-head" for="date">День продажи</label>
+						<input type="date" placeholder="" class="input-date" id="date" />
 
-				<p class="grey-head">На вашу почту будет отправлено письмо с подтверждением регистрации</p>
-				
-				<div class="captcha">
-					<p>Введите текст с картинки:</p>
-					<img src="img/captcha.jpg" height="86" width="166" alt="">
+						<label class="grey-head" for="select">Серия и артикул проданного товара</label>
+						<div class="select-outer select-outer-1">
+						    <select id="select" name="select" size="1">
+						        <option>Серия и артикул</option>	
+						        <option>Серия и артикул</option>	
+						        <option>Серия и артикул</option>				
+						    </select>
+						    <a class="select-button"></a>
+						</div>
+
+						<label class="grey-head" for="number">Номера таллона</label>
+						<input type="text" placeholder="Номер таллона" class="input-text" id="number" />
+
+						<div class="captcha">
+							<p class="grey-head">Введите текст с картинки:</p>
+							<img src="img/captcha.jpg" height="86" width="166" alt="">
+						</div>
+					</div> <!--  конец левой колонки -->
+
+					<!-- Правая колонка с формой -->
+					<div class="column column7 personal-data">
+						<label class="grey-head" for="name">Ваши данные</label>
+						<div class="clearfix">
+							<div class="column column6">
+								<input type="text" placeholder="Имя" value="Игорь" class="input-text" id="name" />
+							</div>
+							<div class="column column6">
+								<input type="text" placeholder="Фамилия" value="Васильев" class="input-text" id="" />
+							</div>
+						</div>
+
+						<label class="grey-head" for="telephone">Номер телефона</label>
+						<div class="clearfix telephone">
+							<div class="column">+7</div>
+							<div class="column">
+								<input type="text" placeholder="" value="921" class="input-text" id="telephone" />
+							</div>
+							<div class="column">
+								<input type="text" placeholder="" value="943 07 80" class="input-text" id="" />
+							</div>
+						</div>
+
+						<label class="grey-head" for="email">Адрес электронной почты</label>
+						<input type="text" placeholder="example@yourmail.ru" class="input-text" id="email" />
+
+						<label class="grey-head" for="city">Город</label>
+						<input type="text" placeholder="Санкт-Петербург" value="Санкт-Петербург" class="input-text" id="city" />
+
+						<label class="grey-head" for="select">Тот же магазин</label>
+						<div class="select-outer select-outer-2">
+						    <select id="select" name="select" size="1">
+						        <option>ЭнергоДом</option>	
+						        <option>ЭнергоДом</option>	
+						        <option>ЭнергоДом</option>				
+						    </select>
+						    <a class="select-button"></a>
+						</div>
+					</div> <!--  конец правой колонки -->
+				</div> <!--  конец секции с формой -->
+
+				<!-- Секция с кнопкой -->
+				<div class="row">
+					<div class="column column5">
+						<input type="submit" value="Зарегистрировать таллон" class="btn black-btn" />
+					</div>
+					<div class="column column7 align-text">
+						<p>У вас <span>10</span> зарегистрированных таллонов и <span>250</span> баллов</p>
+					</div>
 				</div>
 
 			</form>

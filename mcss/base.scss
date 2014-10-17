@@ -109,6 +109,43 @@ a{
     &:hover{ border-bottom-color: transparent; }
 }
 
+/* Серые подписи */ 
+.grey-head{
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Вывод ошибки */
+.error{
+    width: 60%;
+    font-size: 14px;
+    color: #ca1c24;
+    position: relative;
+    top: -13px;
+} 
+
+/* Забыли пароль? */
+.forgot-pass{
+    font-size: 14px;
+    color: #8c8c8c;
+    border-bottom: 1px dashed #8c8c8c;
+} 
+
+/* Капча */ 
+.captcha{
+    p{ 
+        font-size: 14px; 
+        margin-bottom: 5px; 
+    }
+}
+.captcha-position{
+    bottom: 100px;
+    right: -300px;
+    position: absolute;
+}
+
+
 /* 12-колоночная сетка */
 .row:after { @extend .clear; }
 .column {  
@@ -219,7 +256,7 @@ footer form{
 select {
     width: 390px;
     border: none;
-    height: 30px;
+    height: 28px;
     font-size: 16px;
     line-height: 22px;
     position: relative;
@@ -242,7 +279,7 @@ select {
 .select-button {
     background: #e1e1e1 url(../img/select-arrow.jpg) center center no-repeat;
     width: 35px;
-    height: 30px;   
+    height: 28px;   
     position: absolute; 
     right: 0;
     top: 0;
