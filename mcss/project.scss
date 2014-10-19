@@ -684,10 +684,10 @@ footer{
 } 
 
 
-/* ===============
-   service.html
+/* ===============================
+   service.html / retailstore.html
    page styles
-================== */
+================================= */
 
 .service{
 	h1{ margin-bottom: 25px; }
@@ -696,23 +696,29 @@ footer{
 		margin-bottom: 15px;
 	}
 }
+
+/* Поля поиска - общие стили для сервиса и адресов */ 
 .service-search {
 	width: 265px;
 	color: #000;
 	margin-bottom: 30px;
+	margin-right: 120px;
 	.input-search::-webkit-input-placeholder{ color: #000;  }
     .input-search::-moz-placeholder{ color: #000; }
 }
 
-.service-information{
+/* Общий блок - сервис, адреса */ 
+.block-information{
 	width: 865px;
 	margin: 0 auto 15px;
 	padding: 20px 30px;
 	@extend .inbox;
 	border: 1px solid #e1e1e1;
-	.address{ 
-		width: 190px;
-		p{ margin-bottom: 10px; } 
+	p{ margin-bottom: 10px; }
+	.address span{ display: block; } 
+	h2{
+		font-size: 20px; 
+		margin-bottom: 15px;
 	}
 }
 .block-text{
