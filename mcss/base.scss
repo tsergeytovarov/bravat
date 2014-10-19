@@ -64,15 +64,6 @@ h3{
         &:hover{ border-bottom: none; }
     }
 }
-h4{
-
-}
-h5{
-
-}
-h6{
-
-}
 
 .t-right{ text-align: right; }
 
@@ -174,7 +165,7 @@ a{
 /* Основные стили формы */
 
 form{
-    input{
+    input, textarea{
         color: #505050;
         font-size: 14px;
         box-sizing: border-box;
@@ -222,8 +213,20 @@ form{
         background-position: center center;   
         &:hover{ background-color: #dedcdc; }   
     }
+    .text-area{
+        width: 98%;
+        color: #000;
+        font-size: 16px;
+        padding: 10px 15px;
+        display: block;
+        resize: vertical;
+        border: 1px dashed #f0f0f0;
+        &:focus{ border-color: #ccc; }
+    }
     .input-text::-webkit-input-placeholder{ color: #000;  }
     .input-text::-moz-placeholder{ color: #000; }
+    .text-area::-webkit-input-placeholder{ color: #000;  }
+    .text-area::-moz-placeholder{ color: #000; }
 }
 
 /* Формы поиска в подвале */ 

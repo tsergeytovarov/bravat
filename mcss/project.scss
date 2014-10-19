@@ -683,3 +683,74 @@ footer{
 	}
 } 
 
+
+/* ===============
+   service.html
+   page styles
+================== */
+
+.service{
+	h1{ margin-bottom: 25px; }
+	h2{
+		font-size: 20px; 
+		margin-bottom: 15px;
+	}
+}
+.service-search {
+	width: 265px;
+	color: #000;
+	margin-bottom: 30px;
+	.input-search::-webkit-input-placeholder{ color: #000;  }
+    .input-search::-moz-placeholder{ color: #000; }
+}
+
+.service-information{
+	width: 865px;
+	margin: 0 auto 15px;
+	padding: 20px 30px;
+	@extend .inbox;
+	border: 1px solid #e1e1e1;
+	.address{ 
+		width: 190px;
+		p{ margin-bottom: 10px; } 
+	}
+}
+.block-text{
+	margin-bottom: 50px;
+	p{
+		color: #8c8c8c;
+		line-height: 18px;
+		span{ color: #000; }
+	}
+}
+/* Форма обратной связи */
+.feedback-form {
+	margin-bottom: 60px;
+	.text-area{ min-height: 410px; }
+	.foot-form{ margin-top: 15px; }
+}
+
+.warranty{
+	margin-bottom: 70px;
+	h3{
+		font-size: 20px;
+		margin-top: 35px;
+		margin-bottom: 12px;
+		font-family: 'eurofontlightC';
+	}
+	p{
+		line-height: 18px;
+		margin-bottom: 14px;
+	}
+	ul{ margin: 20px 0; }
+	li{
+		margin-left: 15px;
+		margin-bottom: 5px;
+		line-height: 18px;
+		list-style-type: disc;
+	}
+}
+
+
+
+

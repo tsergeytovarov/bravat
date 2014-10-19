@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Брават - Зарегистрированные таллоны</title>
+    
+    <link rel="stylesheet" href="mcss/style.css">
+    
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]--> 
+
+</head>
+<body>
+	<!-- Хедер страницы -->
+	<header>
+		<div class="container">
+			<div class="head-page clearfix">
+				<a href="index.html" class="logo to-left">
+					<h1><img src="img/logo.png" alt="Bravat" /></h1>
+				</a>
+				<form action="" class="to-left">
+					<input type="text" placeholder="Поиск" class="input-search" />
+					<input type="submit" value="Найти" class="submit-search" />
+				</form>
+				<div class="contacts to-right">
+					<p>Телефон горячей линии: +7 (812) 313-80-61</p>
+					<p>
+						<div class="link-dashed link-popup">
+							Контактная информация
+							<div class="popup popup-contact">
+								<p class="head">Контактная информация</p>
+								<p>ООО «БРАВАТ»</p>
+								<p>195027, Санкт-Петербург Свердловская набережная, 44 Д
+									5 этаж, бизнес-центр «Лето»</p>
+								<p>Тел./факс: +7 (812) 642 46 68</p>
+								<p class="margin-bottom">E-mail: info@bravat.info</p>
+								<a href="#">Адреса магазинов</a>
+								<a href="#">Сервисные центы</a>
+								<a href="#">Форма обратной связи</a>
+							</div>
+						</div>
+					</p>
+					<p><a href="#" class="link-line">Адреса магазинов</a></p>
+				</div>
+			</div>
+			<nav>
+				<a href="company.html">О компании</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="design-series.html">Серии</a>
+				<a href="action-1.html">Акции для продавцов</a>
+				<a href="#">Сервис</a>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- Общий блок с враппером в 800px -->
+	<div class="wrapper-block service">
+		<!-- Хлебные крошки -->
+		<article class="breadcrumbs">
+			<a href="index.html">Главная</a>
+			<p>Сервис</p>
+		</article>
+
+		<!-- Сервисные центры -->
+		<section class="">	
+			<h1>Сервис</h1>
+			<h2>Сервисные центры</h2>
+
+			<form action="" class="service-search clearfix">
+				<label for="" class="grey-head">Найдите удобный вам сервис центр</label>
+				<input type="text" class="input-search" placeholder="Где вы находитесь?" />
+				<input type="submit" value="Найти" class="submit-search">
+			</form>
+		</section>
+	</div>
+	
+	<!-- Авторизованный сервисный центр Bravat -->
+	<section class="service service-information">
+		<h2>Авторизованный сервисный центр Bravat</h2>
+		<div class="address">
+			<p>142784, г. Москва, <br/> д. Румянцево, стр. 2, <br/>офис 717В </p>
+			<p>тел. +7 (495) 980-62-62 e-mail: info@aquanet.ru </p>
+		</div>
+	</section>
+
+
+	<!-- Общий блок с враппером в 800px -->
+	<div class="wrapper-block service">
+		
+		<!-- Блок текста -->
+		<article class="block-text">
+			<p>Если в вашем городе пока не открыт авторизованный сервисный центр Bravat, просим вас сообщить о возникшей проблеме в Представительство Bravat в России по телефону <span>+7 812 642 46 68</span>, по электронной почте <span>service@bravat.info</span> или воспользоваться <a href="#" class="link-dashed">формой обратной связи.</a></p>
+		</article>
+
+		<!-- Обратная связь -->
+		<section class="feedback">
+			<h2>Обратная связь</h2>
+			<p>Напишите нам и наш менеджер свяжется с вами в ближайшее время и ответит на ваши вопросы.</p>
+			<form action="" class="feedback-form row">
+				<!-- Левая колонка формы -->
+				<div class="column column6">
+					<label class="grey-head" for="quest">Ваш вопрос <i>*</i></label>
+					<textarea placeholder="Напишите что вас интересует?" class="text-area" id="quest"></textarea>
+				</div>
+				<!-- Правая колонка формы -->
+				<div class="column column6 personal-data">
+					<label class="grey-head" for="name">Как вас зовут <i>*</i></label>
+					<input type="text" placeholder="" value="" class="input-text" id="name" />
+
+					<label class="grey-head" for="email">Адрес электронной почты <i>*</i></label>
+					<input type="text" placeholder="" class="input-text" id="email" />
+
+					<label class="grey-head" for="telephone">Номер телефона</label>
+					<div class="clearfix telephone">
+						<div class="column">+7</div>
+						<div class="column">
+							<input type="text" placeholder="" value="" class="input-text" id="telephone" />
+						</div>
+						<div class="column">
+							<input type="text" placeholder="" value="" class="input-text" id="" />
+						</div>
+					</div>
+
+					<label class="grey-head" for="select">Город</label>
+					<div class="select-outer">
+					    <select id="select" name="select" size="1">
+					        <option>В каком городе вы находитесь?</option>	
+					        <option>Москва</option>	
+					        <option>Санкт-Петербург</option>				
+					    </select>
+					    <a class="select-button"></a>
+					</div>
+
+					<label class="grey-head" for="select">Название магазина</label>
+					<div class="select-outer">
+					    <select id="select" name="select" size="1">
+					        <option>Где вы купили продукцию Bravat?</option>	
+					        <option>ЭнергоДом</option>	
+					        <option>ЭнергоДом</option>				
+					    </select>
+					    <a class="select-button"></a>
+					</div>
+
+					<div class="foot-form row">
+						<div class="captcha to-left">
+							<p class="grey-head">Введите текст с картинки:</p>
+							<img src="img/captcha.jpg" height="86" width="166" alt="">
+						</div>
+						<p class="grey-head to-right">
+							Поля отмеченные * <br/> обязательны для заполнения
+						</p>
+					</div>
+				</div> <!--  конец правой колонки -->
+				<input type="submit" value="Отправить сообщение" class="btn black-btn" />
+			</form>
+		</section>
+		
+		<!-- Гарантийное обслуживание -->
+		<article class="warranty">
+			<h2>Гарантийное обслуживание</h2>
+			<p>Благодарим Вас за приобретение продукциии Bravat. Наша продукция создана ведущими мировыми инженерами и дизайнерами для обеспечения максимального комфорта и наслаждения. В производстве мы используем высококачественное сырьё и современные технологии, что позволяет гарантировать безопасность и надёжность.</p>
+
+			<h3>Срок гарантии на продукцию</h3>
+			<p>Гарантийный срок исчисляется с момента продажи изделия магазином и составляет:</p>
+
+			<ul>
+				<li>Смесители (за исключением картриджей, резиновых уплотнителей, переключателей, шлангов, душевых/гигиенических леек) — 10 лет</li>
+				<li>Керамические картриджи смесителей (гарантия на непротекание) — 5 лет</li>
+				<li>Прочие составные части смесителей (резиновые уплотнители, переключатели, шланги, душевые/гигиенические лейки и т.д.) — 2 года</li>
+				<li>Душевые гарнитуры — 2 года</li>
+				<li>Акриловые ванны — 5 лет</li>
+				<li>Гидрозатворы/ системы слива-перелива ванн — 1 год</li>
+				<li>Гидромассажное оборудование — 3 года</li>
+				<li>Душевые кабины, углы, ограждения — 3 года</li>
+				<li>Оборудование душевых кабин — 2 года</li>
+				<li>Сантехническая керамика — 7 лет</li>
+				<li>Арматура бачка унитаза (за исключением резиновых уплотнителей) — 5 лет</li>
+				<li>Сиденья с крышкой — 2 года</li>
+				<li>Механизм плавного опускания сиденья и крышки — 10 лет</li>
+				<li>Аксессуары для ванной — 1 год</li>
+			</ul>
+
+			<p>Данная гарантия распространяется на изделия только при частном применении, не связанным с предпринимательской деятельностью. При применении изделий в общественной или промышленной сфере деятельности гарантийный срок составляет 1 год.</p>
+			<p>Вся продукция Bravat укомплектована инструкциями по установки и эксплуатации и гарантийными талонами.</p>
+			<p>Гарантийный талон даёт право на бесплатное устранение дефектов в течение гарантийного срока.</p>
+			<p>Гарантийный ремонт выполняется бесплатно (включая стоимость работ и материалов) уполномоченным сервисным центром на дому у покупателя. За исключение легко съемных частей изделия (душевые шланги, душевые насадки, штанги и т.п.). Они ремонтируются или заменяются в мастерской сервисного центра.</p>
+			<p>При обращении в сервисный центр у потребителя должны быть: кассовый или товарный чек, заверенный штампом магазина, полностью заполненный гарантийный талон, и товар в полной комплектации. В случае утраты перечисленных документов срок гарантии исчисляется со дня изготовления изделия.</p>
+			<p>Гарантийный срок после проведения ремонта не возобновляется, а действует дальше.</p>
+			<p>Заменяемые детали переходят в собственность сервисного центра.</p>
+			<p>Любые претензии по качеству принимаются только после его проверки уполномоченным сервисным центром, и на основании его технического заключения. Решение вопроса о замене или ремонте изделия остаётся в компетенции уполномоченного сервисного центра.</p>
+			<p>Если клиент не может предоставить необходимый доступ к элементам изделия, в сервисном обслуживании данного изделия может быть отказано (по усмотрению сервисной службы).</p>
+
+			<h3>Гарантия не распространяется</h3>
+			<ul>
+				<li>На комплектацию изделия  ВНИМАНИЕ! Внешний вид и комплектация изделия проверяется Покупателем в момент получения товара.</li>
+				<li>На внешние и внутренние дефекты, возникшие в результате транспортировки, небрежного обращения или неправильного ухода (рекомендации приведены в инструкции)</li>
+				<li>На недостатки, вызванные неквалифицированной установкой и эксплуатацией изделия не по прямому назначению или в нарушение требований безопасности</li>
+				<li>На недостатки, которые возникли вследствие устранения дефектов неуполномоченными сервисными центрами</li>
+				<li>На недостатки, которые возникли вследствие использования неоригинальных запасных частей и комплектующих</li>
+				<li>На недостатки, возникшие вследствие известкового налёта, либо использования загрязнённой воды</li>
+				<li>На недостатки, вызванные независящими от производителя причинами, такими как перепады давления в водопроводных сетях, попадание посторонних предметов внутрь изделия, умышленные или неосторожные действия потребителя или посторонних лиц, домашние животные и т.д.</li>
+				<li>На случаи повреждения покрытия, вызванные кислотосодержащими и спиртосодержащими средствами, а также органическими растворителями (спиртом, аммиаком, ацетоном, хлором и т.п.)</li>
+				<li>На расходные материалы, подвергшиеся естественному износу (декоративные накладки,аэраторы, резиновые уплотнители и т.д.)</li>
+			</ul>
+
+		</article>
+
+	</div>
+
+	<!-- Блок с поиском и контактной информацией -->
+	<div class="contact-info">
+		<div class="container clearfix">
+			<form action="" class="to-left">
+				<input type="text" placeholder="Поиск" class="input-search" />
+				<input type="submit" value="Найти" class="submit-search" />
+			</form>
+			<div class="contacts to-right">
+				<p>Телефон горячей линии: +7 (812) 313-80-61</p>
+				<p>
+					<div class="link-dashed link-popup">
+						Контактная информация
+						<div class="popup popup-contact">
+							<p class="head">Контактная информация</p>
+							<p>ООО «БРАВАТ»</p>
+							<p>195027, Санкт-Петербург Свердловская набережная, 44 Д
+								5 этаж, бизнес-центр «Лето»</p>
+							<p>Тел./факс: +7 (812) 642 46 68</p>
+							<p class="margin-bottom">E-mail: info@bravat.info</p>
+							<a href="#">Адреса магазинов</a>
+							<a href="#">Сервисные центы</a>
+							<a href="#">Форма обратной связи</a>
+						</div>
+					</div>
+				</p>
+				<p><a href="#" class="link-line">Адреса магазинов</a></p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Подвал сайте -->
+	<footer>
+		<div class="container clearfix">
+			<ul class="navigation">
+				<li class="head">О компании</li>
+				<li><a href="#">История</a></li>
+				<li><a href="#">Мощности</a></li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Дизайн-центры</a></li>
+				<li><a href="#">Наши партнеры</a></li>
+				<li><a href="#">Преимущества Bravat</a></li>
+			</ul>
+			<ul class="navigation">
+				<li class="head">Каталог</li>
+				<li><a href="#">Смесители</a></li>
+				<li><a href="#">Душевые наборы</a></li>
+				<li><a href="#">Душевые лейки</a></li>
+				<li><a href="#">Шланги</a></li>
+				<li><a href="#">Штанги</a></li>
+				<li><a href="#">Акриловые ванны</a></li>
+				<li><a href="#">Душевые ограждения</a></li>
+				<li><a href="#">Санфаянс</a></li>
+			</ul>
+			<ul class="navigation">
+				<li class="head">Где купить</li>
+				<li><a href="#">Найти дилера</a></li>
+				<li><a href="#">Розничные магазины</a></li>
+				<li>
+					<form action="" class="clearfix">
+						<input type="text" placeholder="Введите город" class="input-search" />
+						<input type="submit" value="Найти" class="submit-search" />
+					</form>
+				</li>
+				<li>
+					<form action="" class="clearfix">
+						<input type="text" placeholder="Выберите товар" class="input-search" />
+						<input type="submit" value="Найти" class="submit-search" />
+					</form>
+				</li>
+			</ul>
+			<ul class="navigation">
+				<li class="head">Сервис</li>
+				<li><a href="#">Сервисные центры</a></li>
+				<li><a href="#">Гарантийное обслуживание</a></li>
+				<li><a href="#">Форма обратной связи</a></li>
+				<li><a href="#">Материалы для скачивания</a></li>
+			</ul>				
+		</div>
+	</footer>
+
+    
+   
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/min/script.min.js"></script> -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
