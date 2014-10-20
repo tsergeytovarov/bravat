@@ -51,33 +51,210 @@ header{
 	margin-bottom: 3px;
 	nav{
 		font-size: 0;
-		a{
-			color: #fff;
+
+
+		li{
+			float: left;
 			width: 20%;
-			font-size: 16px;
-			background: #000;
-			padding: 8px 0;
-			text-align: center;
-			display: inline-block;
-			vertical-align: middle;
 			position: relative;
 
-			&:not(:first-child):after{
+			&:not(:last-child):after{
 				content: "";
 				display: block;
 				width: 1px;
 				height: 16px;
 				background: #f0f0f0;
 				position: absolute;
+				right: 0;
 				top: 50%;
 				margin-top: -8px;
 			}
 			
 		    &:hover, .active{ 
-		    	color: #000;
-		    	background: #f0f0f0; 
+		    	
+		    	a{
+		    		color: #000;
+		    		background: #f0f0f0; 
+		    	}
+
+		    	ul{
+		    		display: block;
+		    	}
+
+		    	.big-submenu{
+		    		display: block!important;
+		    	}
 		    }
+
 		}
+
+		a{
+			color: #fff;
+			display: block;
+			width: 100%;
+			font-size: 16px;
+			background: #000;
+			padding: 8px 0;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.small-submenu{
+			background: #fff;
+			box-sizing: border-box;
+			padding: 15px 30px 30px;
+			border: 2px solid #f0f0f0;
+			border-top: 9px solid #f0f0f0;
+			position: absolute;
+			top: 30px;
+			left: 0;
+			z-index: 10000000000;
+			width: 250px;
+			display: none;
+
+			li{
+				float: none;
+				width: 100%;
+
+				&:after{
+					display: none;
+				}
+
+				a{
+					width: 100%;
+					box-sizing: border-box;
+					background: none;
+					font-size: 16px;
+					line-height: 18px;
+					color: #000;
+					text-align: left;
+					padding: 8px;
+
+					&:hover{
+						background: #f0f0f0;
+					}
+				}
+			}
+		}
+
+		.big-submenu{
+			background: #fff;
+			box-sizing: border-box;
+			padding: 15px 30px 30px;
+			border: 2px solid #f0f0f0;
+			border-top: 9px solid #f0f0f0;
+			position: absolute;
+			top: 30px;
+			left: -192px;
+			z-index: 10000000000;
+			width: 960px;
+
+			.row-1, .row-2, .row-3{
+				float: left;
+				box-sizing: border-box;
+			}
+
+			.row-1{
+				width: 260px;
+			}
+
+			.row-2{
+				width: 290px;
+				border-left: 2px solid #f0f0f0;
+				border-right: 2px solid #f0f0f0;
+				padding-left: 30px;
+			}
+
+			.row-3{
+				width: 340px;
+				padding-left: 30px;
+			}
+
+			li{
+				float: none;
+				width: 100%;
+
+				&:after{
+					display: none;
+				}
+
+				a{
+					width: 100%;
+					box-sizing: border-box;
+					background: none;
+					font-size: 16px;
+					line-height: 18px;
+					color: #000;
+					text-align: left;
+					padding: 8px;
+
+					&:hover{
+						background: #f0f0f0;
+					}
+				}
+			}
+
+			.cataloge{
+
+				.item{
+					padding: 4px 0;
+					display: block;
+					background: #fff;
+					width: 225px;
+
+					&:hover{
+						background: #f0f0f0;
+
+						.image{
+
+							img{
+								width: 75px;
+								height: 64px;
+								top: -22px;
+								left: -27px;
+								z-index: 999999;
+							}
+						}
+					}
+
+					.name{
+						width: 100px;
+						font-size: 14px;
+						line-height: 27px;
+						color: #000;
+					}
+
+					.article{
+						width: 95px;
+						font-size: 14px;
+						line-height: 27px;
+						color: #000;
+						text-transform: uppercase;
+					}
+
+					.image{
+						position: relative;
+						width: 30px;
+						height: 27px;
+
+						img{
+							display: block;
+							position: relative;
+							width: 30px;
+							height: 27px;
+							border: 1px solid #f0f0f0;
+							box-sizing: border-box;
+							z-index: 10;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	nav ul li:last-child .small-submenu{
+		left: -58px;
 	}
 }
 

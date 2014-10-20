@@ -35,6 +35,14 @@ $(function(){
 		    $.arcticmodal({
 		        content: c
 		});
-	});	
+	});
+
+	$('.big-submenu').find('.row-2').height( $('.big-submenu').find('.row-1').height() );
+
+	$('.big-submenu').find('.row-3').height( $('.big-submenu').find('.row-1').height() );
+
+	$('.big-submenu').fadeOut(1);
+
+	$(".cataloge").customScrollbar();
 
 });
