@@ -897,6 +897,11 @@ footer{
 		font-size: 20px; 
 		margin-bottom: 15px;
 	}
+	.numbers{
+		color: #8c8c8c;
+		line-height: 22px;
+		span{ color: #000; }
+	}
 }
 .block-text{
 	margin-bottom: 50px;
@@ -906,6 +911,7 @@ footer{
 		span{ color: #000; }
 	}
 }
+
 /* Форма обратной связи */
 .feedback-form {
 	margin-bottom: 60px;
@@ -913,6 +919,7 @@ footer{
 	.foot-form{ margin-top: 15px; }
 }
 
+/* Оформление текста гарантии */ 
 .warranty{
 	margin-bottom: 70px;
 	h3{
@@ -934,6 +941,33 @@ footer{
 	}
 }
 
+/* Блок с адресами магазинов */
+.retail{
+	margin-bottom: 50px;
+	h2{
+		font-size: 24px; 
+		margin-bottom: 15px;
+		margin-top: 80px;
+	}
+	h3{
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		font-family: 'eurofontlightC';
+	}
+	p{ 
+		margin-bottom: 10px;
+		span{ display: block; } 
+	}
+} 
 
+/* Карта */ 
+#map {
+    width: 100%;
+    height: 420px;
+    padding: 0; 
+    margin: 0;
+    margin-bottom: 30px;
+}
 
 
