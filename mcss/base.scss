@@ -92,8 +92,9 @@ a{
 }
 
 .link-line{
-    text-decoration: underline;
-    &:hover{ text-decoration: none; }
+    // text-decoration: underline;
+    border-bottom: 1px solid #000;
+    &:hover{ border-bottom-color: transparent; }
 }
 .link-dashed{
     border-bottom: 1px dashed #000;
@@ -202,6 +203,7 @@ form{
         width: 85%;
         float: left;
         height: 26px;
+        padding-top: 3px;
         border-right: none; 
     }
     .submit-search{
@@ -321,12 +323,18 @@ select {
     a, p{
       color: #8c8c8c;
       font-size: 12px;
+      position: relative;
       display: inline-block;
       vertical-align: top;
+      margin-right: 10px;
+    }
+    a:hover{
+      text-decoration: underline;
     }
     a:after{
       content: "/";
       margin: 0 3px;
+      position: absolute;
     }
     p, .active{ color: #000; }
 } 
@@ -375,6 +383,9 @@ select {
         clear: both;
         overflow: hidden;
         visibility: hidden;
+    }
+    &:hover{ 
+      box-shadow: 0 0 0 2px #e1e1e1; 
     }
 }
 

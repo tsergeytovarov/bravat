@@ -16,85 +16,49 @@
 .contacts{
 	width: 338px;
 	text-align: right;
-	p{ line-height: 20px; }
-	.link{
-		cursor: poiner;
+	p{ line-height: 21px; }
+	.link-line, .link-dashed{
 		display: inline-block;
+		cursor: pointer;
 	}
+	.link-line{ padding-top: 4px; line-height: 16px; }
 }
-
-/* Основное меню через бордер*/
-/*
-header{
-	margin-bottom: 3px;
-	nav{
-		font-size: 0;
-		padding: 7px 0;
-		background: #000;
-		a{
-			color: #fff;
-			font-size: 16px;
-			background: #000;
-			padding: 2px 57px;
-			text-align: center;
-			display: inline-block;
-			vertical-align: middle;
-			border-right: 1px solid #f0f0f0;
-		    &:hover{ color: #ccc; }
-		}
-		a:last-child{ border-right: none; }
-	}
-} */ 
 
 /* Основное меню через псевдоэлемент */ 
 header{
 	margin-bottom: 3px;
 	nav{
 		font-size: 0;
-
-
 		li{
 			float: left;
 			width: 20%;
+			padding: 8px 0;	
 			position: relative;
+			background: #000;
 
-			&:not(:last-child):after{
-				content: "";
-				display: block;
-				width: 1px;
-				height: 16px;
-				background: #f0f0f0;
-				position: absolute;
-				right: 0;
-				top: 50%;
-				margin-top: -8px;
+			&:not(:last-child) a{ 
+				border-right: 1px solid #f0f0f0;
+				position: relative;
+				right: -2px; 
+				z-index: 100;
 			}
 			
 		    &:hover, .active{ 
-		    	
+		    	background: #f0f0f0;
 		    	a{
+		    		width: 100%;
 		    		color: #000;
-		    		background: #f0f0f0; 
+		    		border: none;
 		    	}
-
-		    	ul{
-		    		display: block;
-		    	}
-
-		    	.big-submenu{
-		    		display: block!important;
-		    	}
+		    	ul{ display: block; }
+		    	.big-submenu{ display: block!important; }
 		    }
-
 		}
 
 		a{
 			color: #fff;
-			display: block;
 			width: 100%;
 			font-size: 16px;
-			background: #000;
-			padding: 8px 0;
 			text-align: center;
 			display: inline-block;
 			vertical-align: middle;
@@ -105,9 +69,9 @@ header{
 			box-sizing: border-box;
 			padding: 15px 30px 30px;
 			border: 2px solid #f0f0f0;
-			border-top: 9px solid #f0f0f0;
+			border-top: none;
 			position: absolute;
-			top: 30px;
+			top: 32px;
 			left: 0;
 			z-index: 10000000000;
 			width: 250px;
@@ -116,9 +80,15 @@ header{
 			li{
 				float: none;
 				width: 100%;
+				padding: 8px 0;
+				background: transparent;
 
 				&:after{
 					display: none;
+				}
+
+				&:hover{
+					background: #f0f0f0;
 				}
 
 				a{
@@ -129,11 +99,8 @@ header{
 					line-height: 18px;
 					color: #000;
 					text-align: left;
-					padding: 8px;
+					padding: 0 8px;
 
-					&:hover{
-						background: #f0f0f0;
-					}
 				}
 			}
 		}
@@ -143,9 +110,9 @@ header{
 			box-sizing: border-box;
 			padding: 15px 30px 30px;
 			border: 2px solid #f0f0f0;
-			border-top: 9px solid #f0f0f0;
+			border-top: none;
 			position: absolute;
-			top: 30px;
+			top: 32px;
 			left: -192px;
 			z-index: 10000000000;
 			width: 960px;
@@ -174,9 +141,15 @@ header{
 			li{
 				float: none;
 				width: 100%;
+				padding: 8px 0;
+				background: transparent;
 
 				&:after{
 					display: none;
+				}
+
+				&:hover{
+					background: #f0f0f0;
 				}
 
 				a{
@@ -187,11 +160,7 @@ header{
 					line-height: 18px;
 					color: #000;
 					text-align: left;
-					padding: 8px;
-
-					&:hover{
-						background: #f0f0f0;
-					}
+					padding: 0 8px;
 				}
 			}
 
@@ -426,6 +395,7 @@ footer{
 
 /* Стили для каталога */ 
 .all-catalog{
+	.goods{ min-height: 180px; }
 	.catalog{ margin: 30px 0 70px; }
 	.all-link{	
 		padding: 0;
@@ -482,7 +452,7 @@ footer{
 
 /* Кастомизация слайда */ 
 .card-slider{
-	margin-top: 80px;
+	margin-top: 30px;
 	.bx-wrapper{ 
 		float: left; 
 		margin-right: 18px;
@@ -543,7 +513,7 @@ footer{
 			margin-bottom: 10px;
 		}
 		a{ margin-bottom: 20px; }
-		a:last-child{ margin-top: 50px; }
+		// a:last-child{ margin-top: 50px; }
 	}
 	.link-block{
 		margin: 30px 0;
@@ -657,7 +627,7 @@ footer{
 	@extend .inbox;
 	background: #fff;
 	position: absolute;
-	top: -30px;
+	top: -32px;
 	left: 50%;
 	margin-left: -167px;
 	border: 1px solid #e1e1e1;
