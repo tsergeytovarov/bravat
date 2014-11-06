@@ -42,4 +42,9 @@ $(function(){
 
 	$(".cataloge").customScrollbar();
 
+	$('.link-popup').on('click',function(e){
+	    e.preventDefault();
+	    $('.popup').toggleClass('active');
+	});
+
 });

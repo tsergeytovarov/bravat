@@ -310,6 +310,7 @@ select {
 .container{
     width: 960px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .wrapper-block{
     width: 800px;
@@ -394,7 +395,7 @@ select {
 .link-popup{ 
     display: inline-block;
     position: relative; 
-    &:hover .popup{ display: inherit; }
+    // &:hover .popup{ display: inherit; }
 }
 .popup{
     z-index: 10;
@@ -405,6 +406,7 @@ select {
     display: none;
 }
 
+.active{ display: inherit; }
 
 /* 
     arcticModal — jQuery plugin
